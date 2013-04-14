@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.m
 //  LAKMovableViewProject
 //
 //  Created by Leonard Ah Kun on 2013/04/14.
@@ -18,14 +18,28 @@
 //  limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "LAKMovableView.h"
 
-@class ViewController;
+@interface ViewController ()
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@end
 
-@property (strong, nonatomic) UIWindow *window;
+@implementation ViewController
 
-@property (strong, nonatomic) ViewController *viewController;
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	
+	LAKMovableView *movableView = [[LAKMovableView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+	movableView.backgroundColor = [UIColor greenColor];
+	[self.view addSubview:movableView];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end

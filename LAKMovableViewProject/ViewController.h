@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  LAKMovableViewProject
 //
 //  Created by Leonard Ah Kun on 2013/04/14.
@@ -20,12 +20,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@interface ViewController : UIViewController
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) ViewController *viewController;
 
 @end
