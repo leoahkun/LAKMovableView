@@ -19,8 +19,8 @@
 		B38437F6171A9AFE00267BBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B38437F5171A9AFE00267BBE /* ViewController.m */; };
 		B38437F9171A9AFE00267BBE /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38437F7171A9AFE00267BBE /* ViewController_iPhone.xib */; };
 		B38437FC171A9AFE00267BBE /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38437FA171A9AFE00267BBE /* ViewController_iPad.xib */; };
-		B3843805171AA44900267BBE /* LAKCGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B3843804171AA44900267BBE /* LAKCGUtils.m */; };
-		B3843808171AA4A900267BBE /* LAKMovableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3843807171AA4A900267BBE /* LAKMovableView.m */; };
+		B384380F171AC0D300267BBE /* LAKCGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B384380C171AC0D300267BBE /* LAKCGUtils.m */; };
+		B3843810171AC0D300267BBE /* LAKMovableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B384380E171AC0D300267BBE /* LAKMovableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +41,10 @@
 		B38437F5171A9AFE00267BBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B38437F8171A9AFE00267BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		B38437FB171A9AFE00267BBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		B3843803171AA44900267BBE /* LAKCGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAKCGUtils.h; sourceTree = "<group>"; };
-		B3843804171AA44900267BBE /* LAKCGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAKCGUtils.m; sourceTree = "<group>"; };
-		B3843806171AA4A900267BBE /* LAKMovableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAKMovableView.h; sourceTree = "<group>"; };
-		B3843807171AA4A900267BBE /* LAKMovableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAKMovableView.m; sourceTree = "<group>"; };
+		B384380B171AC0D300267BBE /* LAKCGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAKCGUtils.h; sourceTree = "<group>"; };
+		B384380C171AC0D300267BBE /* LAKCGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAKCGUtils.m; sourceTree = "<group>"; };
+		B384380D171AC0D300267BBE /* LAKMovableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAKMovableView.h; sourceTree = "<group>"; };
+		B384380E171AC0D300267BBE /* LAKMovableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAKMovableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +91,7 @@
 		B38437E2171A9AFE00267BBE /* LAKMovableViewProject */ = {
 			isa = PBXGroup;
 			children = (
-				B3843803171AA44900267BBE /* LAKCGUtils.h */,
-				B3843804171AA44900267BBE /* LAKCGUtils.m */,
-				B3843806171AA4A900267BBE /* LAKMovableView.h */,
-				B3843807171AA4A900267BBE /* LAKMovableView.m */,
+				B384380A171AC0B900267BBE /* LAKMovableView */,
 				B38437EB171A9AFE00267BBE /* AppDelegate.h */,
 				B38437EC171A9AFE00267BBE /* AppDelegate.m */,
 				B38437F4171A9AFE00267BBE /* ViewController.h */,
@@ -118,6 +115,17 @@
 				B38437F2171A9AFE00267BBE /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B384380A171AC0B900267BBE /* LAKMovableView */ = {
+			isa = PBXGroup;
+			children = (
+				B384380B171AC0D300267BBE /* LAKCGUtils.h */,
+				B384380C171AC0D300267BBE /* LAKCGUtils.m */,
+				B384380D171AC0D300267BBE /* LAKMovableView.h */,
+				B384380E171AC0D300267BBE /* LAKMovableView.m */,
+			);
+			path = LAKMovableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +198,8 @@
 				B38437E9171A9AFE00267BBE /* main.m in Sources */,
 				B38437ED171A9AFE00267BBE /* AppDelegate.m in Sources */,
 				B38437F6171A9AFE00267BBE /* ViewController.m in Sources */,
-				B3843805171AA44900267BBE /* LAKCGUtils.m in Sources */,
-				B3843808171AA4A900267BBE /* LAKMovableView.m in Sources */,
+				B384380F171AC0D300267BBE /* LAKCGUtils.m in Sources */,
+				B3843810171AC0D300267BBE /* LAKMovableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +334,7 @@
 				B3843801171A9AFE00267BBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
